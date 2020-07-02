@@ -11,9 +11,11 @@ path = r'./dataset' # use your path
 
 csv_list = importAllCsvFromFolder(path)
 
-frame = pd.concat(csv_list, axis=0, ignore_index=True)
+movie_df = pd.concat(csv_list, axis=0, ignore_index=True)
 
-print(frame.head())
+print(movie_df.info())
+
+ 
 
 
  
